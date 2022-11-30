@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gn.module.main.VideoplayerController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <MediaView fx:id="mv" fitHeight="200.0" fitWidth="200.0" layoutX="193.0" layoutY="84.0" />
+            <Button layoutX="489.0" layoutY="30.0" mnemonicParsing="false" onAction="#menu" prefHeight="25.0" prefWidth="74.0" text="Menu" />
+            <Button layoutX="234.0" layoutY="351.0" mnemonicParsing="false" onAction="#pause" prefHeight="25.0" prefWidth="90.0" text="pause" />
+            <Button layoutX="65.0" layoutY="351.0" mnemonicParsing="false" onAction="#paly" prefHeight="25.0" prefWidth="90.0" text="play" />
+            <Button layoutX="393.0" layoutY="351.0" mnemonicParsing="false" onAction="#reload" prefHeight="25.0" prefWidth="90.0" text="reload" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

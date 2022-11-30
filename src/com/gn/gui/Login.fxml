@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="root" prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gn.gui.LoginController">
+   <children>
+      <StackPane id="foreground" fx:id="sp1" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #00000048;">
+         <children>
+            <AnchorPane id="fore-content" prefHeight="617.0" prefWidth="1115.0" StackPane.alignment="CENTER">
+               <children>
+                  <StackPane id="custom-dialog" alignment="TOP_LEFT" minWidth="250.0" prefHeight="101.0" prefWidth="250.0" style="-fx-background-color: -foreground-color;" AnchorPane.leftAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+      <StackPane fx:id="sp2" style="-fx-background-color: -foreground-color;">
+         <children>
+            <HBox fx:id="main" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox id="drawer" fx:id="drawer1" alignment="TOP_CENTER" minWidth="0.0" prefHeight="798.0" prefWidth="567.0">
+                     <stylesheets>
+                        <URL value="@../theme/css/material-color.css" />
+                        <URL value="@../theme/css/skeleton.css" />
+                        <URL value="@../theme/css/bootstrap.css" />
+                        <URL value="@../theme/css/shape.css" />
+                        <URL value="@../theme/css/typographic.css" />
+                        <URL value="@../theme/css/helpers.css" />
+                        <URL value="@../theme/css/master.css" />
+                        <URL value="@../module/drawer.css" />
+                        <URL value="@../theme/css/login.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="border" />
+                        <String fx:value="border-r-1" />
+                        <String fx:value="drawer" />
+                        <String fx:value="loginBackground" />
+                     </styleClass>
+                     <children>
+                        <VBox alignment="TOP_CENTER">
+                           <children>
+                              <HBox alignment="CENTER" spacing="10.0">
+                                 <children>
+                                    <ImageView fitHeight="128.0" fitWidth="200.0">
+                                       <image>
+                                          <Image url="@../../../assets/logo.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="60.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="75.0" top="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="50.0" top="50.0" />
+                           </VBox.margin>
+                        </VBox>
+                        <ImageView fitHeight="350.0" fitWidth="436.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../assets/animation_500_kmtiwslc.gif" />
+                           </image>
+                        </ImageView>
+                        <VBox id="drawer-box" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <VBox alignment="BOTTOM_CENTER" VBox.vgrow="ALWAYS">
+                                 <VBox.margin>
+                                    <Insets bottom="50.0" />
+                                 </VBox.margin>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="content" fillWidth="false" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" styleClass="background-color" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox fx:id="pageTitle">
+                           <children>
+                              <HBox id="bar" fx:id="barHeader" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <GridPane prefHeight="336.0" prefWidth="711.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="633.0" />
+                                          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label fx:id="title" styleClass="h2" text="Bienvenue" textFill="#0000008c" translateX="100.0" translateY="100.0">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                                             <padding>
+                                                <Insets right="20.0" />
+                                             </padding>
+                                          </VBox>
+                                          <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" translateX="100.0" translateY="-50.0">
+                                             <image>
+                                                <Image url="@../../../assets/logoooo.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="title1" styleClass="h4" text="veuillez vous connecter" textFill="#0000008c" translateX="100.0" translateY="140.0">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </HBox>
+                              <HBox id="bar" fx:id="barHeader1">
+                                 <children>
+                                    <GridPane prefHeight="336.0" prefWidth="711.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="633.0" />
+                                          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <HBox id="bar" fx:id="barHeader11" prefHeight="479.0" prefWidth="667.0">
+                                             <children>
+                                                <JFXTextField fx:id="email" prefColumnCount="13" prefWidth="600.0" promptText="email" stylesheets="@../theme/css/login.css" translateX="170.0" translateY="50.0" />
+                                                <JFXPasswordField fx:id="password" focusColor="#2bbbad" prefWidth="600.0" promptText="password" stylesheets="@../theme/css/login.css" translateX="-165.0" translateY="130.0" unFocusColor="#e6e9ed" />
+                                             </children>
+                                          </HBox>
+                                          <Label fx:id="title2" styleClass="h4" text="Email :" textFill="#0000008c" translateX="70.0" translateY="-95.0">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="title21" styleClass="h4" text="Password :" textFill="#0000008c" translateX="70.0" translateY="-20.0">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="loginBtn" mnemonicParsing="false" onMouseClicked="#Login" prefWidth="399.0" text="s'auhentifier" translateX="150.0" translateY="70.0" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Label fx:id="title22" styleClass="h4" text="Nouvel Utilisateur ? " textFill="#0000008c" translateX="200.0" translateY="-40.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="registerTitle" onMouseClicked="#RegisterRedirection" style="-fx-text-fill: #2bbbad;" styleClass="h4" stylesheets="@../theme/css/login.css" text="créer un compte" textFill="#0000008c" translateX="370.0" translateY="-65.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="forgetPasswordTitle" onMouseClicked="#forgetPasswordRedirection" style="-fx-text-fill: #2bbbad;" styleClass="h4" stylesheets="@../theme/css/login.css" text="mot de passe oublié ? " textFill="#0000008c" translateX="260.0" translateY="-50.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="codeTitle" onMouseClicked="#fpCodeRedirection" style="-fx-text-fill: #2bbbad;" styleClass="h4" stylesheets="@../theme/css/login.css" text="avez-vous un code ?" textFill="#0000008c" translateX="265.0" translateY="-40.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <styleClass>
+                  <String fx:value="border-top-1" />
+                  <String fx:value="border" />
+               </styleClass>
+            </HBox>
+         </children>
+      </StackPane>
+   </children>
+    <stylesheets>
+        <URL value="@../theme/css/material-color.css" />
+        <URL value="@../theme/css/skeleton.css" />
+        <URL value="@../theme/css/bootstrap.css" />
+        <URL value="@../theme/css/shape.css" />
+        <URL value="@../theme/css/typographic.css" />
+        <URL value="@../theme/css/helpers.css" />
+        <URL value="@../theme/css/master.css" />
+    </stylesheets>
+</StackPane>

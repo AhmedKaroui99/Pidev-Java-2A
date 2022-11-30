@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="com.gn.module.main.CalendrierController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <DatePicker fx:id="date" layoutX="158.0" layoutY="60.0" onAction="#showcalendar" prefHeight="26.0" prefWidth="167.0" promptText="Entrer la date" />
+            <Button layoutX="93.0" layoutY="319.0" mnemonicParsing="false" onAction="#re" text="Retour rendez-vous" />
+            <Button layoutX="318.0" layoutY="319.0" mnemonicParsing="false" onAction="#fa" text="facture paiement" />
+            <ImageView fitHeight="154.0" fitWidth="206.0" layoutX="365.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Documents/NetBeansProjects/Application2/src/k.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="393.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Documents/NetBeansProjects/Application2/src/tenor2.gif" />
+               </image>
+            </ImageView>
+            <Label fx:id="lb1" layoutX="207.0" layoutY="139.0" prefHeight="32.0" prefWidth="146.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb2" layoutX="21.0" layoutY="135.0" prefHeight="40.0" prefWidth="167.0" textFill="#b20707">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelclock" layoutX="217.0" layoutY="229.0" prefHeight="18.0" prefWidth="146.0">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb3" layoutX="39.0" layoutY="231.0" prefHeight="18.0" prefWidth="108.0" textFill="#b20b0b">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

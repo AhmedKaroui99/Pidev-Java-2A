@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="571.0" prefWidth="989.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gn.gui.MeditationController">
+   <children>
+      <Pane prefHeight="580.0" prefWidth="300.0" styleClass="sidebar" stylesheets="@stylesheet.css">
+         <children>
+            <VBox layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="100.0" />
+            <ImageView fitHeight="147.0" fitWidth="217.0" layoutX="39.0" layoutY="27.0">
+               <image>
+                  <Image url="@../../../logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="558.0" layoutY="46.0" text="Méditation">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablerubrique" layoutX="321.0" layoutY="127.0" prefHeight="398.0" prefWidth="626.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="100.0" text="Associeid" />
+            <TableColumn fx:id="titre" prefWidth="46.0" text="Titre" />
+            <TableColumn fx:id="breve" prefWidth="152.0" text="Descriptionbreve" />
+            <TableColumn fx:id="detaille" prefWidth="154.0" text="Descriptiondetaille" />
+            <TableColumn fx:id="action" prefWidth="110.0" text="Action" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gn.module.main.FXMLfacturepController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="14.0" prefHeight="460.0" prefWidth="693.0">
+         <children>
+            <Button layoutX="7.0" layoutY="356.0" mnemonicParsing="false" onAction="#ajoutpaiement" prefHeight="8.0" prefWidth="100.0" style="-fx-background-color: #82B1FF;" text="Ajouter" />
+            <Label layoutX="3.0" layoutY="40.0" prefHeight="55.0" prefWidth="231.0" text="  Facturepaiement" textFill="#47b2bc">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="4.0" layoutY="407.0" mnemonicParsing="false" onAction="#supprimerpaiement" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #82B1FF;" text="supprimer" />
+            <TextField fx:id="tsclientid" layoutX="16.0" layoutY="157.0" prefHeight="25.0" prefWidth="159.0" promptText="clientid" />
+            <TextField fx:id="tsmontant" layoutX="14.0" layoutY="205.0" prefHeight="25.0" prefWidth="159.0" promptText="Montant" />
+            <TextField fx:id="tsdatef" layoutX="12.0" layoutY="250.0" prefHeight="25.0" prefWidth="167.0" promptText="Email du client" />
+            <Label layoutX="57.0" layoutY="282.0" />
+            <TableView fx:id="tableview" layoutX="242.0" layoutY="67.0" prefHeight="322.0" prefWidth="451.0">
+               <columns>
+                  <TableColumn fx:id="idfacturecolonne" prefWidth="83.0" text="idfacture" />
+                  <TableColumn fx:id="idRdvcolonnne" prefWidth="83.0" text="idRdv" />
+                  <TableColumn fx:id="clientidcolonne" prefWidth="75.0" text="clientid" />
+                  <TableColumn fx:id="montantColonne" prefWidth="94.0" text="montant" />
+                  <TableColumn fx:id="datefColonne" prefWidth="97.0" text="Email client" />
+                  <TableColumn fx:id="datefa" prefWidth="89.0" text="datefacture" />
+               </columns>
+            </TableView>
+            <Button layoutX="531.0" layoutY="407.0" mnemonicParsing="false" onAction="#retour" prefHeight="25.0" prefWidth="159.0" style="-fx-background-color: #82B1FF;" text="Retour rendez-vous" />
+            <TextField fx:id="tsrecherche" layoutX="327.0" layoutY="20.0" prefHeight="41.0" prefWidth="365.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="104.0" fitWidth="116.0" layoutX="-5.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Documents/NetBeansProjects/Application2/src/contactfree-contactless.GIF" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnmodiffacture" layoutX="126.0" layoutY="356.0" mnemonicParsing="false" onAction="#modiffa" prefHeight="25.0" prefWidth="107.0" text="modifier" />
+            <Button layoutX="377.0" layoutY="407.0" mnemonicParsing="false" onAction="#imprimerfacture" prefHeight="25.0" prefWidth="129.0" text="imprimer" />
+            <DatePicker fx:id="datefact" layoutX="8.0" layoutY="299.0" />
+            <Button layoutX="257.0" layoutY="407.0" mnemonicParsing="false" onAction="#tosendfacture" prefHeight="25.0" prefWidth="113.0" text="Email" />
+            <Button fx:id="exporttoexcel" layoutX="126.0" layoutY="407.0" mnemonicParsing="false" onAction="#exporttoexcel" prefHeight="25.0" prefWidth="129.0" text="Export to excel" />
+            <TextField fx:id="tsidRdv" layoutX="19.0" layoutY="111.0" promptText="idRdv" />
+            <TextField fx:id="tsidfacture" layoutX="30.0" layoutY="70.0" visible="false" />
+            <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="327.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Documents/NetBeansProjects/Application2/src/rechericon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="8.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Documents/NetBeansProjects/Application2/src/download.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="8.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Documents/NetBeansProjects/Application2/src/download%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="115.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Documents/NetBeansProjects/Application2/src/download%20(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="263.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Documents/NetBeansProjects/Application2/src/images%20(1).jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="386.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Documents/NetBeansProjects/Application2/src/png-transparent-adobe-pdf-icon-adobe-acrobat-adobe-reader-computer-icons-pdf-pdf-miscellaneous-text-logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="127.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Documents/NetBeansProjects/Application2/src/download%20(5).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="531.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Documents/NetBeansProjects/Application2/src/download%20(6).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="78.0" fitWidth="92.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="8.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="8.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../assets/download.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="127.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="25.0" fitWidth="31.0" layoutX="4.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../assets/download%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="127.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../assets/download.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="124.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../assets/download%20(5).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="263.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../assets/images%20(1).jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="385.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../assets/png-transparent-adobe-pdf-icon-adobe-acrobat-adobe-reader-computer-icons-pdf-pdf-miscellaneous-text-logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="25.0" layoutX="530.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../assets/images%20(2).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="37.0" layoutX="332.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../assets/images.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

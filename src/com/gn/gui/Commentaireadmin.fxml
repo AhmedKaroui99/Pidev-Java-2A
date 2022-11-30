@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="571.0" prefWidth="989.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gn.gui.CommentaireadminController">
+   <children>
+      <Pane prefHeight="580.0" prefWidth="300.0" styleClass="sidebar" stylesheets="@stylesheet.css" />
+      <TableView fx:id="tablecommentaire" layoutX="205.0" layoutY="187.0" prefHeight="344.0" prefWidth="579.0">
+         <columns>
+            <TableColumn fx:id="idcommentaire" prefWidth="126.0" text="id commentaire" />
+            <TableColumn fx:id="clientid" prefWidth="67.0" text="clientid" />
+            <TableColumn fx:id="contenucommentaire" prefWidth="161.0" text="contenucommentaire" />
+            <TableColumn fx:id="datecommentaire" prefWidth="144.0" text="datecommentaire" />
+            <TableColumn fx:id="action" prefWidth="83.0" text="Action" />
+         </columns>
+      </TableView>
+      <TextField fx:id="search" layoutX="360.0" layoutY="128.0" onKeyReleased="#serach" prefHeight="27.0" prefWidth="194.0" />
+      <Label layoutX="155.0" layoutY="48.0" text="Tous les commentaires">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

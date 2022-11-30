@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gn.gui.ModifiercommentaireController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane id="AnchorPane" layoutX="15.0" layoutY="15.0" prefHeight="400.0" prefWidth="600.0">
+               <children>
+                  <VBox layoutX="59.0" layoutY="127.0" prefHeight="162.0" prefWidth="176.0">
+                     <children>
+                        <VBox prefHeight="55.0" prefWidth="176.0" spacing="18.0" />
+                        <Label text="contenucommentaire" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="254.0" layoutY="175.0" prefHeight="65.0" prefWidth="259.0" spacing="10.0">
+                     <children>
+                        <JFXTextField fx:id="acontenucommentaire" promptText="contenucommentaire" />
+                     </children>
+                  </VBox>
+                  <JFXButton fx:id="modifier" buttonType="RAISED" layoutX="347.0" layoutY="329.0" onAction="#ModifierCommentaire" prefHeight="31.0" prefWidth="207.0" text="modifier Commentaire" textFill="#222075" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
